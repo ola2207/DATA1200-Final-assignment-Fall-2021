@@ -7,6 +7,7 @@ function jump(){
         character.classList.add("animate");
         counter++;
         document.getElementById("points").innerHTML=counter;
+        document.getElementById("jump").play();
     }
     setTimeout(function(){
         character.classList.remove("animate");
@@ -22,9 +23,10 @@ var checkdead = setInterval(function(){
         block.style.display= "none";
         character.style.animatiion="none";
         character.style.display="none";
+        document.getElementById("error2").setAttribute("src","images/error2.png");
         document.getElementById("points").style.left="38%";
         document.getElementById("points").style.color="red";
-        document.getElementById("points").innerHTML="Game over";
+        document.getElementById("points").innerHTML="GAME OVER";
         document.getElementById("points2").innerHTML="Your score: " + counter;
         document.getElementById("audio").play();
     }

@@ -57,9 +57,16 @@ aside{
     color: lawngreen;
     font-family: PrStart;
 }
+#aside_Left{
+    position: absolute;
+    left: 80px;
+    top:80%;
+}
 #error{
     width: 310px;
     height: 180px;
+}
+#error2{
 }
 #points{
     position: absolute;
@@ -118,12 +125,4 @@ aside{
     30%{top:190px;}
     70%{top:190px;}
     100%{top: 240px;}
-}
-@keyframes hover{
-    0%{background-color: lawngreen;}
-    100%{background-color: black;}
-}
-@keyframes hover2{
-    0%{color: black;}
-    100%{color: lawngreen;}
 }
