@@ -26,5 +26,6 @@ var checkdead = setInterval(function(){
         document.getElementById("points").style.color="red";
         document.getElementById("points").innerHTML="Game over";
         document.getElementById("points2").innerHTML="Your score: " + counter;
+        document.getElementById("audio").play();
     }
 },10);
