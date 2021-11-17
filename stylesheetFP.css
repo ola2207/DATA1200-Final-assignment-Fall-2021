@@ -2,12 +2,16 @@
     font-family:FreeLine;
     src:url(fonts/FreeLine.ttf);
 }
+@font-face{
+    font-family:PrStart;
+    src:url(fonts/PrStart.ttf);
+}
 
 body{
     background-image: url(images/computer.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: FreeLine;
+    font-family: PrStart;
     background-color: black;
 }
 ul{
@@ -18,7 +22,7 @@ ul{
 }
 #ul1{
 position: absolute;
-    top: 10px;
+top: 10px;
 }
 #ul2{
     position: absolute;
@@ -28,12 +32,12 @@ position: absolute;
 li{
     display: flex;
     list-style: none;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     margin-right: 10px;
     border-radius: 10px;
     background-color: lawngreen;
     font-size: 11px;
-    transition: background-color 2s ease-out 100ms;
+    transition: background-color 500ms ease-out 100ms;
 }
 a{
     text-decoration: none;
@@ -48,9 +52,29 @@ a:hover{
 }
 aside{
     position: absolute;
-    right: 30px;
+    right: 50px;
     top: 30%;
     color: lawngreen;
+    font-family: PrStart;
+}
+#error{
+    width: 310px;
+    height: 180px;
+}
+#points{
+    position: absolute;
+    color: white;
+    left: 49%;
+    font-family: PrStart;
+    font-size: 40px;
+}
+#points2{
+    position: absolute;
+    color: white;
+    left: 42%;
+    top: 40%;
+    font-family: PrStart;
+    font-size: 20px;
 }
 #game{
     width: 400px;
@@ -83,7 +107,7 @@ aside{
     position: relative;
     left: 380px;
     top: 220px;
-    animation: block 1s infinite;
+    animation: block 800ms infinite;
 }
 @keyframes block{
     0%{left: 380px;}
