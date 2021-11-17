@@ -18,7 +18,7 @@ ul{
     display: flex;
     margin: 20px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
-    border-radius: 5px;
+    width: 35%;
 }
 #ul1{
 position: absolute;
@@ -26,29 +26,30 @@ top: 10px;
 }
 #ul2{
     position: absolute;
-    right: 8px;
-    top: 10px;
+    left: 10px;
+    top: 70px;
 }
 li{
     display: flex;
     list-style: none;
     padding: 15px 10px 10px 10px;
     margin-right: 10px;
-    border-radius: 10px;
-    background-color: lawngreen;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: cornflowerblue;
     font-size: 11px;
     transition: background-color 500ms ease-out 100ms;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: background-color 2s ease-out 100ms;
 }
 li:hover{
-    background-color: black;
+    background-color: darkblue;
 }
 a:hover{
-   color: lawngreen;
+   color: red;
 }
 aside{
     position: absolute;
@@ -72,8 +73,10 @@ aside{
     position: absolute;
     color: white;
     left: 49%;
+    top: 20%;
     font-family: PrStart;
     font-size: 40px;
+    z-index: 1000000;
 }
 #points2{
     position: absolute;
@@ -82,14 +85,17 @@ aside{
     top: 40%;
     font-family: PrStart;
     font-size: 20px;
+    z-index: 100000;
 }
 #game{
+    position: absolute;
+    left:36.5%;
+    top: 17.3%;
     width: 400px;
     height: 290px;
-    margin-left: 518px;
-    margin-top: 142px;
     background-color: blue;
     overflow: hidden;
+    z-index: 0;
 }
 #character{
     padding: 0;
