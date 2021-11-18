@@ -67,8 +67,6 @@ aside{
     width: 310px;
     height: 180px;
 }
-#error2{
-}
 #points{
     position: absolute;
     color: white;
@@ -131,4 +129,41 @@ aside{
     30%{top:190px;}
     70%{top:190px;}
     100%{top: 240px;}
+}
+
+@media only screen and (max-width:376px){
+    body{
+        background-image: none;
+    }
+    #error{
+        visibility: hidden;
+    }
+    #game{
+    left: 0%;
+    top: 20.3%;
+    }
+    #gameInfo{
+        width: 0px;
+        height: 0px;
+    }
+    #points{
+    left: 15%;
+    top: 20%;
+    font-size: 30px;
+}
+    #points2{
+    left: 30%;
+    top: 40%;
+    font-size: 15px;
+}
+    #error2{
+        width: 375px;
+    }
+    #aside_Left{
+    left: 15px;
+    top:80%;
+}
+    li{
+    font-size: 8px;
+}
 }
