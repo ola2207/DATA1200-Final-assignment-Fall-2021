@@ -53,7 +53,7 @@
 						rgba(86, 79, 95, 0.64),
 						rgba(79, 30, 83, 0.39)
 					),
-					url(./img/slide1.png);
+					url(images/slide1.jpg);
 			"
 		>
 			<button id="left" class="slide-arrow-div">
@@ -92,24 +92,24 @@
 
 			const bilder = [
 				{
-					bilde: "images/slide2.png",
+					bilde: "images/slide2.jpg",
 					tittel: "Accessibility",
 					beskrivelse:
 						"This page contains a short presentation of accessibility, how the group tested the code for accessibility using an automated test.",
 				},
 				{
-					bilde: "images/slide3.png",
+					bilde: "images/slide3.jpg",
 					tittel: "Topical information",
 					beskrivelse:
 						"This page contains a short text about electric scooters and the various problems they have made.",
 				},
 				{
-					bilde: "images/slide4.png",
+					bilde: "images/slide4.jpg",
 					tittel: "Fun page",
 					beskrivelse: "This page contains a fun little game!",
 				},
 				{
-					bilde: "images/slide1.png",
+					bilde: "images/slide1.jpg",
 					tittel: "Reflection essay",
 					beskrivelse:
 						"This page contains a short text describing the challenges experienced by the (one, several or all) members of the group when transitioning from upper-secondary school (or work-life) to university.",
@@ -120,7 +120,7 @@
 			let loaded = false;
 			let i = 0;
 			let stopSlide = false;
-			let slidesLength = 8;
+			let slidesLength = 30;
 
 			const slideshow = (p) => {
 				if (i >= bilder.length) {
