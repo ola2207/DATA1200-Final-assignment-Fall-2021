@@ -5,19 +5,216 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Welcome</title>
+		<link rel="stylesheet" href="style3.css" />
+		<script
+			src="https://kit.fontawesome.com/8823a292b7.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
+
 	<body>
-		<h1>Welcome</h1>
-		<ul>
-			<li><a href="reflection.html">Reflection-Essay</a></li>
-			<li><a href="accessibility.html">Accessibility Page</a></li>
-			<li><a href="topical-info.html">Topical Information</a></li>
-			<li><a href="fun-page.html">Fun Page</a></li>
-		</ul>
-		<p>
-			This page should be a general information page that helps the visitor
-			understand what this site is, and navigate to the other pages. May be short
-			and simple. Common theme for site: Being a first-year student (at OsloMet).
-		</p>
+		<header>
+			<nav id="main-nav">
+				<a class="img-link" href="./index.html">
+					<figure class="img-container">
+						<img id="logo-img" src="./img/logo.png" alt="logo" />
+					</figure>
+				</a>
+				<div class="nav-middle">
+					<a href="./index.html">Home</a>
+					<a href="reflection.html">Reflection essay</a>
+					<a href="accessibility.html">Accessiblility</a>
+					<a href="topical-info.html">Topical information</a>
+					<a href="fun-page.html">Fun page</a>
+				</div>
+			</nav>
+		</header>
+
+		<input type="checkbox" id="cb" />
+
+		<label id="burger" for="cb">
+			<div></div>
+			<div></div>
+			<div></div>
+		</label>
+
+		<nav id="menu">
+			<a href="./index.html">Home</a>
+			<a href="./products.html">Products</a>
+			<a href="./about.html">About</a>
+			<a href="./contact-us.html">Contact</a>
+		</nav>
+
+		<section
+			class="para p1"
+			id="home"
+			style="
+				background-image: linear-gradient(
+						rgba(86, 79, 95, 0.64),
+						rgba(79, 30, 83, 0.39)
+					),
+					url(./img/slide1.png);
+			"
+		>
+			<button id="left" class="slide-arrow-div">
+				<i class="fas fa-chevron-left" aria-hidden="true"></i>
+			</button>
+
+			<div class="home-div">
+				<div class="home-left">
+					<div>
+						<h1 class="site-name">Reflection essay</h1>
+						<p class="site-description">
+							This page contains a short text describing the challenges experienced by
+							the (one, several or all) members of the group when transitioning from
+							upper-secondary school (or work-life) to university.
+						</p>
+						<a href="reflection.html">
+							<button type="button">Go to page</button>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<button class="slide-arrow-div" id="right">
+				<i class="fas fa-chevron-right" aria-hidden="true"></i>
+			</button>
+		</section>
+
+		<script src="./index.js"></script>
+		<script>
+			const p1 = document.querySelector(".p1");
+			const produktContainer = document.querySelector(".produktbilde");
+			const leftArrow = document.querySelector("#left");
+			const rightArrow = document.querySelector("#right");
+			const siteName = document.querySelector(".site-name");
+			const siteDescription = document.querySelector(".site-description");
+
+			const bilder = [
+				{
+					bilde: "images/slide2.png",
+					tittel: "Accessibility",
+					beskrivelse:
+						"This page contains a short presentation of accessibility, how the group tested the code for accessibility using an automated test.",
+				},
+				{
+					bilde: "images/slide3.png",
+					tittel: "Topical information",
+					beskrivelse:
+						"This page contains a short text about electric scooters and the various problems they have made.",
+				},
+				{
+					bilde: "images/slide4.png",
+					tittel: "Fun page",
+					beskrivelse: "This page contains a fun little game!",
+				},
+				{
+					bilde: "images/slide1.png",
+					tittel: "Reflection essay",
+					beskrivelse:
+						"This page contains a short text describing the challenges experienced by the (one, several or all) members of the group when transitioning from upper-secondary school (or work-life) to university.",
+				},
+			];
+
+			let interval;
+			let loaded = false;
+			let i = 0;
+			let stopSlide = false;
+			let slidesLength = 8;
+
+			const slideshow = (p) => {
+				if (i >= bilder.length) {
+					i = 0;
+				}
+
+				const bakgrunn = bilder[i].bilde;
+
+				//p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
+				//url(${bakgrunn})`;
+
+				//produktContainer.src = bakgrunn
+				//produktContainer.alt = "Product image of The Rise modular alarm clock"
+				siteName.innerHTML = bilder[i].tittel;
+				siteDescription.innerHTML = bilder[i].beskrivelse;
+
+				p1.style.backgroundImage = `linear-gradient(rgba(86, 79, 95, 0.64), rgba(79, 30, 83, 0.39)), url(${bakgrunn})`;
+
+				i++;
+
+				/*if(bilder.length > 0 ){
+
+			         //Går til neste slide
+			         if(p !== "previous"){
+			             if(i >= slidesLength ) {
+			                 i = 0
+			             }
+			         }
+
+			         //Går til forrige slide
+			         if(p === "previous"){
+			             if(i > slidesLength){
+			                 i = slidesLength - 1
+			             }
+
+			             if(i === 1){
+			                 i = slidesLength + 1
+			             }
+
+			             i--
+			         }
+
+			         //Kjører slideshow som vanlig
+			         else{
+			             i++
+			         }
+
+			         const bakgrunn = bilder[i];
+
+
+			         p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
+			         url(${bakgrunn})`;
+
+			     }*/
+			};
+
+			//Toggler mellom play og pause ikonene
+			//Stopper og kjører slideshow avhenging av ikonene
+			const toggle = (evt) => {
+				evt.stopPropagation();
+				stopSlide = !stopSlide;
+
+				if (stopSlide) {
+					stopSlideshow();
+				} else {
+					nextMovie();
+				}
+			};
+
+			//Går til neste slide manuelt
+			const nextMovie = (param) => {
+				if (!stopSlide) {
+					slideshow(param);
+					interval = clearInterval(interval);
+					interval = setInterval(slideshow, 3000);
+				} else {
+					slideshow(param);
+				}
+			};
+
+			//Stopper slideshow
+			const stopSlideshow = () => {
+				interval = clearInterval(interval);
+			};
+
+			interval = setInterval(slideshow, 5000);
+
+			leftArrow.onclick = () => {
+				nextMovie("previous");
+			};
+
+			rightArrow.onclick = () => {
+				nextMovie();
+			};
+		</script>
 	</body>
 </html>
