@@ -229,7 +229,7 @@ button {
 		position: absolute;
 		right: 0;
 		top: -1000px;
-		transition: 1.3s;
+		transition: 1.5s;
 		z-index: 15;
 	}
 
@@ -242,25 +242,11 @@ button {
 	#cb:checked ~ #menu {
 		top: 80px;
 		right: 0;
-		transition: 0.5s;
+		transition: 0.6s;
 	}
 
 	#burger div {
-		transition: 0.5s;
-	}
-
-	#cb:checked ~ #burger div:first-child {
-		transform: translateY(14px) rotate(45deg);
-	}
-
-	#cb:checked ~ #burger div:nth-child(2) {
-		transform: translateX(-200px);
-		opacity: 0;
-		z-index: 0;
-	}
-
-	#cb:checked ~ #burger div:last-child {
-		transform: translateY(-14px) rotate(-45deg);
+		transition: 0.6s;
 	}
 }
 
