@@ -119,7 +119,7 @@
 			let loaded = false;
 			let i = 0;
 			let stopSlide = false;
-			let slidesLength = 50;
+			let slidesLength = 30;
 
 			const slideshow = (p) => {
 				if (i >= bilder.length) {
@@ -182,7 +182,7 @@
 				}
 			};
 
-			interval = setInterval(slideshow, 9000);
+			interval = setInterval(slideshow, 10000);
 
 			leftArrow.onclick = () => {
 				nextMovie("previous");
