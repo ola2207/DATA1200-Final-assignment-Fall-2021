@@ -120,7 +120,7 @@
 			let loaded = false;
 			let i = 0;
 			let stopSlide = false;
-			let slidesLength = 30;
+			let slidesLength = 50;
 
 			const slideshow = (p) => {
 				if (i >= bilder.length) {
@@ -129,11 +129,6 @@
 
 				const bakgrunn = bilder[i].bilde;
 
-				//p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
-				//url(${bakgrunn})`;
-
-				//produktContainer.src = bakgrunn
-				//produktContainer.alt = "Product image of The Rise modular alarm clock"
 				siteName.innerHTML = bilder[i].tittel;
 				siteDescription.innerHTML = bilder[i].beskrivelse;
 
@@ -177,19 +172,6 @@
 			     }*/
 			};
 
-			//Toggler mellom play og pause ikonene
-			//Stopper og kjører slideshow avhenging av ikonene
-			const toggle = (evt) => {
-				evt.stopPropagation();
-				stopSlide = !stopSlide;
-
-				if (stopSlide) {
-					stopSlideshow();
-				} else {
-					nextMovie();
-				}
-			};
-
 			//Går til neste slide manuelt
 			const nextMovie = (param) => {
 				if (!stopSlide) {
@@ -201,12 +183,7 @@
 				}
 			};
 
-			//Stopper slideshow
-			const stopSlideshow = () => {
-				interval = clearInterval(interval);
-			};
-
-			interval = setInterval(slideshow, 5000);
+			interval = setInterval(slideshow, 9000);
 
 			leftArrow.onclick = () => {
 				nextMovie("previous");
