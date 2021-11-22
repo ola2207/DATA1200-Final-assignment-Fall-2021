@@ -88,7 +88,6 @@ header {
 	align-items: center;
 	padding: 0 1rem;
 	grid-template-columns: 1fr auto 1fr;
-	border-bottom: 0.5px solid #636571;
 }
 
 .nav-middle {
@@ -218,7 +217,7 @@ button {
 	#menu {
 		height: calc(100vh - 80px);
 		display: flex;
-		background: #6c6e85ef;
+		background: #5346caf5;
 		font-family: "Marcellus", sans-serif;
 		font-weight: 700;
 		font-size: 1.6rem;
