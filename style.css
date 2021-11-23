@@ -89,7 +89,7 @@ header {
 
 .nav-middle {
 	display: flex;
-	gap: 3.5rem;
+	gap: 1.5rem;
 }
 
 #home-img {
@@ -194,7 +194,7 @@ button {
 	display: none;
 }
 
-@media only screen and (max-width: 732px) {
+@media only screen and (max-width: 667px) {
 	#main-nav {
 		display: flex;
 		justify-content: space-between;
