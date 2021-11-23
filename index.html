@@ -17,7 +17,7 @@
 			<nav id="main-nav">
 				<a class="img-link" href="./index.html">
 					<figure class="img-container">
-						<img id="logo-img" src="images/home.png" alt="logo" />
+						<img id="home-img" src="images/home.png" alt="home page" />
 					</figure>
 				</a>
 				<div class="nav-middle">
@@ -119,7 +119,7 @@
 			let loaded = false;
 			let i = 0;
 			let stopSlide = false;
-			let slidesLength = 30;
+			let slidesLength = 40;
 
 			const slideshow = (p) => {
 				if (i >= bilder.length) {
@@ -176,7 +176,7 @@
 				if (!stopSlide) {
 					slideshow(param);
 					interval = clearInterval(interval);
-					interval = setInterval(slideshow, 3000);
+					interval = setInterval(slideshow, 10000);
 				} else {
 					slideshow(param);
 				}

@@ -75,7 +75,6 @@ header {
 	background: #5346ca;
 	height: 80px;
 	width: 100%;
-	border-radius: 2.5px;
 	top: 0;
 	margin: 0;
 	padding: 0;
@@ -93,9 +92,23 @@ header {
 	gap: 3.5rem;
 }
 
+#home-img {
+	transition: transform 500ms ease-out 100ms;
+}
+
+#home-img:hover {
+	transform: rotate(360deg);
+}
+
 a {
 	text-decoration: none;
 	color: white;
+	transition: color 100ms ease-out 100ms, font-size 100ms ease-out 100ms;
+}
+
+a:hover {
+	color: rgb(203, 183, 250);
+	font-size: x-large;
 }
 
 .fas {
