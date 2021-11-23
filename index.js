@@ -16,3 +16,10 @@ cb.onclick = () => {
 		document.body.style.overflow = "scroll";
 	}
 };
+
+function function_Omo(){
+    document.getElementById("home-img").setAttribute("src","images/home_hover.png");
+}
+function default_Bilde(){
+    document.getElementById("home-img").setAttribute("src","images/home.png");
+}
