@@ -68,7 +68,9 @@
 							the (one, several or all) members of the group when transitioning from
 							upper-secondary school (or work-life) to university.
 						</p>
-						<a href="reflection.html">
+
+						<a  id="btn"  class="sitebtn" href="reflection.html">
+
 							<button type="button">Go to page</button>
 						</a>
 					</div>
@@ -132,6 +134,19 @@
 				siteDescription.innerHTML = bilder[i].beskrivelse;
 
 				p1.style.backgroundImage = `linear-gradient(rgba(86, 79, 95, 0.64), rgba(79, 30, 83, 0.39)), url(${bakgrunn})`;
+                
+                if(i == 0){
+                    document.getElementById("btn").setAttribute("href","accessibility.html");
+                }
+                else if(i == 1){
+                    document.getElementById("btn").setAttribute("href", "topical-info.html");
+                }
+                 else if(i == 2){
+                    document.getElementById("btn").setAttribute("href", "fun-page.html");
+                }
+                 else if(i == 3){
+                    document.getElementById("btn").setAttribute("href", "reflection.html");
+                }
 
 				i++;
 
