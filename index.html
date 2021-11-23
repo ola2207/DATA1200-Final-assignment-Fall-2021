@@ -68,7 +68,7 @@
 							the (one, several or all) members of the group when transitioning from
 							upper-secondary school (or work-life) to university.
 						</p>
-						<a href="reflection.html">
+						<a href="reflection.html" id="btn"  class="sitebtn">
 							<button type="button">Go to page</button>
 						</a>
 					</div>
@@ -88,6 +88,8 @@
 			const rightArrow = document.querySelector("#right");
 			const siteName = document.querySelector(".site-name");
 			const siteDescription = document.querySelector(".site-description");
+            const siteBtn = document.querySelector(".sitebtn");
+    
 
 			const bilder = [
 				{
@@ -95,23 +97,27 @@
 					tittel: "Accessibility",
 					beskrivelse:
 						"This page contains a short presentation of accessibility, how the group tested the code for accessibility using an automated test.",
+                    btn: document.getElementById("btn").setAttribute("href", "accessibility.html"),
 				},
 				{
 					bilde: "images/slide3.jpg",
 					tittel: "Topical information",
 					beskrivelse:
 						"This page contains a short text about electric scooters and the various problems they have made.",
+                    btn: document.getElementById("btn").setAttribute("href", "topical-info.html"),
 				},
 				{
 					bilde: "images/slide4.jpg",
 					tittel: "Fun page",
 					beskrivelse: "This page contains a fun little game!",
+                    btn: document.getElementById("btn").setAttribute("href", "fun-page.html"),
 				},
 				{
 					bilde: "images/slide1.jpg",
 					tittel: "Reflection essay",
 					beskrivelse:
 						"This page contains a short text describing the challenges experienced by the (one, several or all) members of the group when transitioning from upper-secondary school (or work-life) to university.",
+                    btn: document.getElementById("btn").setAttribute("href", "reflection.html"),
 				},
 			];
 
@@ -130,6 +136,7 @@
 
 				siteName.innerHTML = bilder[i].tittel;
 				siteDescription.innerHTML = bilder[i].beskrivelse;
+                siteBtn.innerHtml = bilder[i].btn;
 
 				p1.style.backgroundImage = `linear-gradient(rgba(86, 79, 95, 0.64), rgba(79, 30, 83, 0.39)), url(${bakgrunn})`;
 
