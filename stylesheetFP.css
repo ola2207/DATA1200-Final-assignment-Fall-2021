@@ -131,7 +131,7 @@ aside{
     100%{top: 240px;}
 }
 
-@media only screen and (max-width:376px){
+@media only screen and (max-width:400px){
     body{
         background-image: none;
     }
