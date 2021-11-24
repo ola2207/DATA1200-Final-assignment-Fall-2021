@@ -9,7 +9,7 @@ body {
 	font-family: "Playfair Display", serif;
 	position: relative;
 	overflow-x: hidden;
-	background-color: #9b70ff;
+	background-color: #b7a5e0;
 }
 
 h2,
@@ -311,4 +311,9 @@ hr {
 
 .margin-bottom3 {
 	margin-bottom: 3rem;
+}
+
+#reflection-img {
+	width: 50%;
+	height:auto;
 }
