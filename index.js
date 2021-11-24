@@ -25,7 +25,6 @@ function default_Bilde() {
 }
 
 const p1 = document.querySelector(".p1");
-const produktContainer = document.querySelector(".produktbilde");
 const leftArrow = document.querySelector("#left");
 const rightArrow = document.querySelector("#right");
 const siteName = document.querySelector(".site-name");
