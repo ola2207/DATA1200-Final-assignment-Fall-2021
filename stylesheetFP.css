@@ -63,53 +63,74 @@ aside{
     left: 80px;
     top:80%;
 }
+#gameInfo2{
+    position: absolute;
+    width: 500px;
+    top: 70%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 70px;
+    color: white;
+    visibility: hidden;
+}
 #error{
     width: 310px;
     height: 180px;
 }
 #points{
-    position: absolute;
     color: white;
-    left: 49%;
-    top: 20%;
     font-family: PrStart;
     font-size: 40px;
     z-index: 1000000;
+    display: inline-flex;
+    position: absolute;
 }
 #points2{
-    position: absolute;
     color: white;
-    left: 42%;
-    top: 40%;
     font-family: PrStart;
     font-size: 20px;
     z-index: 100000;
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
 }
 #points3{
-    position: absolute;
     color: red;
-    left: 38%;
-    top: 20%;
     font-family: PrStart;
     font-size: 40px;
     z-index: 1000000;
+    display: inline-flex;
+    position: absolute;
 }
 #startGame{
     position: absolute;
-    left: 45%;
-    top: 30%;
+    display: inline-flex;
     z-index: 1000000;
-    width: 10%;
-    height: 10%;
+    width: 110px;
+    height: 50px;
     font-size: 20px;
     font-family: prStart;
     background-color:darkblue;
     color: red;
+    top: 40%;
+}
+#startGame>div{
+    position: absolute;
+    top: 12px;
+}
+article{
+    position:absolute;
+    top: 17%;
+    left: 36.5%;
+}
+#game_div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 #game{
-    position: absolute;
-    left:36.5%;
-    top: 17.3%;
     width: 400px;
     height: 290px;
     background-color: blue;
@@ -153,44 +174,42 @@ aside{
     100%{top: 240px;}
 }
 
-@media only screen and (max-width:1400px)
-
-@media only screen and (max-width:400px){
+@media only screen and (max-width:1400px){
     body{
-        background-image: none;
+       background-image: none;
     }
+
     #error{
         visibility: hidden;
-    }
-    #game{
-    left: 0%;
-    top: 20.3%;
-    }
-    #gameInfo{
         width: 0px;
         height: 0px;
     }
-    #points{
-    left: 15%;
-    top: 20%;
-    font-size: 30px;
-}
-    #points2{
-    left: 30%;
-    top: 40%;
-    font-size: 15px;
-}
+    article{
+        top: 30%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+
+    }
     #error2{
-        width: 375px;
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+        width: 500px;
     }
     #aside_Left{
-    left: 15px;
-    top:80%;
-}
-    li{
-    font-size: 8px;
-}
-    #startGame{
-        font-size: 8px;
+        left: 0;
     }
+    #game{
+        border: 5px solid red;
+    }
+    #gameInfo2{
+        visibility: visible
+    }
+    
 }
+
+
