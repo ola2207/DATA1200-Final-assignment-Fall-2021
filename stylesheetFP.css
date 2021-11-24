@@ -65,7 +65,7 @@ aside{
 }
 #gameInfo2{
     position: absolute;
-    width: 500px;
+    width: 350px;
     top: 70%;
     left: 0; 
     right: 0; 
@@ -198,7 +198,7 @@ article{
         right: 0; 
         margin-left: auto; 
         margin-right: auto;
-        width: 500px;
+        width: 350px;
     }
     #aside_Left{
         left: 0;
