@@ -24,11 +24,13 @@ var checkdead = setInterval(function(){
         character.style.animatiion="none";
         character.style.display="none";
         document.getElementById("error2").setAttribute("src","images/error2.png");
-        document.getElementById("points").style.left="38%";
-        document.getElementById("points").style.color="red";
-        document.getElementById("points").innerHTML="GAME OVER";
+        document.getElementById("points3").innerHTML="GAME OVER";
         document.getElementById("points2").innerHTML="Your score: " + counter;
+        document.getElementById("points").style.visibility="hidden";
+        document.getElementById("points").style.width="0px";
+        document.getElementById("points").style.height="0px";
         document.getElementById("audio").play();
+        counter = 0;
     }
 },10);
 
