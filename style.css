@@ -12,7 +12,6 @@ body {
 	background-color: #b7a5e0;
 }
 
-h2,
 figure {
 	margin: 0;
 	padding: 0;
@@ -23,7 +22,7 @@ article > h1 {
 	text-align: center;
 }
 
-article > p {
+p {
 	line-height: 2rem;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -189,10 +188,12 @@ img {
 
 .site-name {
 	margin-top: 0px;
+	margin-left: 0px;
 }
 
 .site-description {
 	line-height: 1.5rem;
+	margin-left: 0px;
 }
 
 #burger,
