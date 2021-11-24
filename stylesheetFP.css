@@ -85,6 +85,27 @@ aside{
     font-size: 20px;
     z-index: 100000;
 }
+#points3{
+    position: absolute;
+    color: red;
+    left: 38%;
+    top: 20%;
+    font-family: PrStart;
+    font-size: 40px;
+    z-index: 1000000;
+}
+#startGame{
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    z-index: 1000000;
+    width: 10%;
+    height: 10%;
+    font-size: 20px;
+    font-family: prStart;
+    background-color:darkblue;
+    color: red;
+}
 #game{
     position: absolute;
     left:36.5%;
@@ -119,6 +140,7 @@ aside{
     left: 380px;
     top: 220px;
     animation: block 800ms infinite;
+    animation-play-state: paused;
 }
 @keyframes block{
     0%{left: 380px;}
