@@ -153,6 +153,8 @@ aside{
     100%{top: 240px;}
 }
 
+@media only screen and (max-width:1400px)
+
 @media only screen and (max-width:400px){
     body{
         background-image: none;
@@ -188,4 +190,7 @@ aside{
     li{
     font-size: 8px;
 }
+    #startGame{
+        font-size: 8px;
+    }
 }
