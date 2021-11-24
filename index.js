@@ -1,3 +1,4 @@
+// Hamburger menu
 const cb = document.querySelector("#cb");
 
 window.onresize = () => {
@@ -15,15 +16,7 @@ cb.onclick = () => {
 	}
 };
 
-function function_Omo() {
-	document
-		.getElementById("home-img")
-		.setAttribute("src", "images/home_hover.png");
-}
-function default_Bilde() {
-	document.getElementById("home-img").setAttribute("src", "images/home.png");
-}
-
+// Slideshow
 const p1 = document.querySelector(".p1");
 const leftArrow = document.querySelector("#left");
 const rightArrow = document.querySelector("#right");
@@ -123,7 +116,7 @@ const slideshow = (p) => {
 };
 
 //Går til neste slide manuelt
-const nextMovie = (param) => {
+const nextImg = (param) => {
 	if (!stopSlide) {
 		slideshow(param);
 		interval = clearInterval(interval);
@@ -136,9 +129,18 @@ const nextMovie = (param) => {
 interval = setInterval(slideshow, 10000);
 
 leftArrow.onclick = () => {
-	nextMovie("previous");
+	nextImg("previous");
 };
 
 rightArrow.onclick = () => {
-	nextMovie();
+	nextImg();
 };
+
+function function_Omo() {
+	document
+		.getElementById("home-img")
+		.setAttribute("src", "images/home_hover.png");
+}
+function default_Bilde() {
+	document.getElementById("home-img").setAttribute("src", "images/home.png");
+}

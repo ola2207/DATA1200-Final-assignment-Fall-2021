@@ -6,27 +6,41 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav id="main-nav">
-            <a class="img-link" href="./index.html">
-                <figure class="img-container">
-                    <img id="logo-img" src="images/home.png" alt="logo" />
-                </figure>
-            </a>
-            <div class="nav-middle">
-                <a href="reflection.html">Reflection essay</a>
-                <a href="accessibility.html">Accessiblility</a>
-                <a href="topical-info.html">Topical information</a>
-                <a href="fun-page.html">Fun page</a>
-            </div>
-        </nav>
-    </header>
-    <nav id="menu">
+  <header>
+    <nav id="main-nav">
+      <a class="img-link" href="./index.html">
+        <figure class="img-container">
+          <img
+            id="home-img"
+            src="images/home.png"
+            alt="home page"
+            onmouseout="default_Bilde()"
+            onmouseover="function_Omo()"
+          />
+        </figure>
+      </a>
+      <div class="nav-middle">
         <a href="reflection.html">Reflection essay</a>
-        <a href="accessibility.html">Accessibility</a>
+        <a href="accessibility.html">Accessiblility</a>
         <a href="topical-info.html">Topical information</a>
         <a href="fun-page.html">Fun page</a>
+      </div>
     </nav>
+  </header>
+
+  <input type="checkbox" id="cb" />
+  <label id="burger" for="cb">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+
+  <nav id="menu">
+    <a href="reflection.html">Reflection essay</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="topical-info.html">Topical information</a>
+    <a href="fun-page.html">Fun page</a>
+  </nav>
 <body>
     <p>
         I Norge har et av de største problemene med el-sparkesykler vært manglende regulering. Det har tatt lang tid å 
@@ -87,4 +101,5 @@
 			</p>
 		</article>
 	</body>
+  <script src="index.js"></script>
 </html>
