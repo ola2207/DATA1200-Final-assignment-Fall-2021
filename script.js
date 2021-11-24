@@ -31,3 +31,12 @@ var checkdead = setInterval(function(){
         document.getElementById("audio").play();
     }
 },10);
+
+function start_Game(){
+    var btn = document.getElementById("startGame");
+    
+    block.style.animationPlayState="running";
+    btn.style.visibility="hidden";
+    btn.style.width="0px";
+    btn.style.height="0px";
+}
