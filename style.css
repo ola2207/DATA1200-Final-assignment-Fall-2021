@@ -6,10 +6,10 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Playfair Display", serif;
+	font-family: "Marcellus", sans-serif;
 	position: relative;
 	overflow-x: hidden;
-	background-color: #9b70ff;
+	background-color: #b7a5e0;
 }
 
 h2,
@@ -18,11 +18,11 @@ figure {
 	padding: 0;
 }
 
-h1 {
+article > h1 {
 	margin-top: 15px;
 }
 
-p {
+article > p {
 	line-height: 2rem;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -148,14 +148,6 @@ img {
 	gap: 1rem;
 }
 
-button {
-	color: white;
-	border: none;
-	padding: 1rem;
-	cursor: pointer;
-	background-color: rgb(191 191 191 / 26%);
-}
-
 .slide-img-container {
 	max-width: 350px;
 	position: absolute;
@@ -192,6 +184,14 @@ button {
 
 .text-center {
 	text-align: center;
+}
+
+.site-name {
+	margin-top: 0px;
+}
+
+.site-description {
+	line-height: 1.5rem;
 }
 
 #burger,
@@ -260,6 +260,11 @@ button {
 		text-decoration: none;
 		color: white;
 		font-weight: 700;
+		transition: font-size 100ms ease-out 50ms;
+	}
+
+	#menu a:hover {
+		font-size: xx-large;
 	}
 
 	#cb:checked ~ #menu {
@@ -271,6 +276,19 @@ button {
 	#burger div {
 		transition: 0.6s ease-out 0.6s;
 	}
+}
+
+button {
+	color: white;
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+	background-color: rgb(191 191 191 / 26%);
+	transition: color 200ms ease-out 100ms;
+}
+
+button:hover {
+	color: #cbb7fa;
 }
 
 .slide-arrow-div {
@@ -311,4 +329,9 @@ hr {
 
 .margin-bottom3 {
 	margin-bottom: 3rem;
+}
+
+#reflection-img {
+	width: 50%;
+	height: auto;
 }
