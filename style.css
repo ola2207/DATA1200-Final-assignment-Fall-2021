@@ -338,6 +338,11 @@ hr {
 	height: auto;
 	margin: 1%;
 }
+#accessibility-img {
+	width: 100;
+	height: auto;
+	margin: 1%;
+}
 
 p,h1,h2,h3 {
 	margin: 1%;
