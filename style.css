@@ -341,5 +341,8 @@ hr {
 
 p,h1,h2,h3 {
 	margin: 1%;
+}
+
+#ref-p {
 	max-width: 50%;
 }
