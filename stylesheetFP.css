@@ -64,16 +64,20 @@ aside{
     top:80%;
 }
 #gameInfo2{
+    display: inline-flex;
     position: absolute;
-    width: 350px;
-    top: 70%;
+    width: 380px;
+    top: 78%;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    padding-left: 70px;
-    color: white;
+    color: red;
+    background-color: blue;
     visibility: hidden;
+    border: 8px double lightgrey;
+    padding: 5px 0px 5px 10px;
+    
 }
 #error{
     width: 310px;
@@ -201,10 +205,13 @@ article{
         width: 350px;
     }
     #aside_Left{
-        left: 0;
+        top: 41%;
+        left: 11%;
+        z-index: 10000000000;
     }
     #game{
         border: 5px solid red;
+        box-shadow: 0 0 0 12px darkgrey, 0 0 0 30px lightgrey, 0 12px 0 30px dimgrey, 0 50px 0 30px lightgrey;
     }
     #gameInfo2{
         visibility: visible
