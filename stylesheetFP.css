@@ -1,11 +1,10 @@
-@font-face{
-    font-family:FreeLine;
-    src:url(fonts/FreeLine.ttf);
-}
+
 @font-face{
     font-family:PrStart;
     src:url(fonts/PrStart.ttf);
 }
+
+/*Decided to use PrStart font by Codeman38, as it gave the retro pixel look we wanted*/
 
 body{
     background-image: url(images/computer.jpeg);
@@ -83,6 +82,9 @@ aside{
     width: 310px;
     height: 180px;
 }
+
+/* to keep in line with the retro look, we decided to add old school microsoft error popups that had information in them by using a error box generator (http://atom.smasher.org/error/?icon=radiation&title=Game+Controls&url=&text=JUMP+%3D+left+click%0D%0A%0D%0ANEW+GAME+%3D+Command+%2B+R&b1=&b2=&b3=)*/
+
 #points{
     color: white;
     font-family: PrStart;
@@ -167,6 +169,9 @@ article{
     animation: block 800ms infinite;
     animation-play-state: paused;
 }
+
+/* Animations for the game*/
+
 @keyframes block{
     0%{left: 380px;}
     100%{left: -40px;}
@@ -177,6 +182,8 @@ article{
     70%{top:190px;}
     100%{top: 240px;}
 }
+
+/* As the site has a background image that interacts with the gameview, it wouldnt look nice if you reduced the size of the browser. Made a media query to account for this problem, also added a new design to account for the loss of the background image.*/
 
 @media only screen and (max-width:1400px){
     body{
