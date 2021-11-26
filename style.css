@@ -348,9 +348,9 @@ hr {
 }
 
 #reflection-img {
-	width: 50%;
+	width: 98%;
 	height: auto;
-	margin: 1%;
+	margin: 1% 15% 1% 1%;
 }
 .accessibility-img {
 	margin: 1%;
@@ -363,16 +363,4 @@ h1,
 h2,
 h3 {
 	margin: 1%;
-}
-
-#ref-p {
-	max-width: 50%;
-}
-#a_reflection {
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 150%;
 }
