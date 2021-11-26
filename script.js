@@ -1,3 +1,5 @@
+//followed KnifeCircus's tutorial on the game code (https://www.youtube.com/watch?v=bG2BmmYr9NQ), but added a lot of personalisations like start screen, game over screen, point system, audio and design. 
+
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 var counter = 0;
