@@ -101,6 +101,7 @@ rightArrow.onclick = () => {
 	nextImg();
 };
 
+// home-symbol skifter farge
 function function_Omo() {
 	document
 		.getElementById("home-img")
