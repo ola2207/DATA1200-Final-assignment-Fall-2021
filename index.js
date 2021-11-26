@@ -45,7 +45,7 @@ const bilder = [
 		bilde: "images/slide1.jpg",
 		tittel: "Reflection essay",
 		beskrivelse:
-			"This page contains a short text describing the challenges experienced by the (one, several or all) members of the group when transitioning from upper-secondary school (or work-life) to university.",
+			"This page contains a short text describing the challenges experienced by a member of the group when transitioning from upper-secondary school to university.",
 	},
 ];
 
@@ -78,41 +78,6 @@ const slideshow = (p) => {
 	}
 
 	i++;
-
-	/*if(bilder.length > 0 ){
-
-         //Går til neste slide
-         if(p !== "previous"){
-             if(i >= slidesLength ) {
-                 i = 0
-             }
-         }
-
-         //Går til forrige slide
-         if(p === "previous"){
-             if(i > slidesLength){
-                 i = slidesLength - 1
-             }
-
-             if(i === 1){
-                 i = slidesLength + 1
-             }
-
-             i--
-         }
-
-         //Kjører slideshow som vanlig
-         else{
-             i++
-         }
-
-         const bakgrunn = bilder[i];
-
-
-         p1.style.backgroundImage = `linear-gradient(to bottom, rgb(86 79 95 / 64%),rgb(79 30 83 / 39%)),
-         url(${bakgrunn})`;
-
-     }*/
 };
 
 //Går til neste slide manuelt
@@ -137,7 +102,9 @@ rightArrow.onclick = () => {
 };
 
 function function_Omo() {
-	document.getElementById("home-img").setAttribute("src", "images/home_hover.png");
+	document
+		.getElementById("home-img")
+		.setAttribute("src", "images/home_hover.png");
 }
 function default_Bilde() {
 	document.getElementById("home-img").setAttribute("src", "images/home.png");
