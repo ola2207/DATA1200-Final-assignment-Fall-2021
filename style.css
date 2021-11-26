@@ -201,7 +201,15 @@ img {
 #menu {
 	display: none;
 }
-
+.topic_links{
+    text-decoration: underline;
+    color: black;
+    transition: color 100ms ease-out 100ms;
+}
+.topic_links:hover{
+    color:midnightblue;
+    font-size: 16px;
+}
 @media only screen and (max-width: 667px) {
 	#main-nav {
 		display: flex;
