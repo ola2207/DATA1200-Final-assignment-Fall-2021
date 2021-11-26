@@ -19,7 +19,6 @@ figure {
 
 article > h1 {
 	margin-top: 15px;
-	
 }
 
 p {
@@ -201,15 +200,7 @@ img {
 #menu {
 	display: none;
 }
-.topic_links{
-    text-decoration: underline;
-    color: black;
-    transition: color 100ms ease-out 100ms;
-}
-.topic_links:hover{
-    color:midnightblue;
-    font-size: 16px;
-}
+
 @media only screen and (max-width: 667px) {
 	#main-nav {
 		display: flex;
@@ -352,7 +343,10 @@ hr {
 	width: 90%;
 }
 
-p,h1,h2,h3 {
+p,
+h1,
+h2,
+h3 {
 	margin: 1%;
 }
 
