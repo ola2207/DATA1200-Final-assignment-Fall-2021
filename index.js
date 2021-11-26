@@ -42,7 +42,7 @@ const bilder = [
 		beskrivelse: "This page contains a fun little game!",
 	},
 	{
-		bilde: "images/slide1.jpg",
+		bilde: "images/slide1.png",
 		tittel: "Reflection essay",
 		beskrivelse:
 			"This page contains a short text describing the challenges experienced by a member of the group when transitioning from upper-secondary school to university.",
